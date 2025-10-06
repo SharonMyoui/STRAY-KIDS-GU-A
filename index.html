@@ -1,190 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Stray Kids para No-Stays</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guía para stannear a SKZ (Stray Kids)</title>
   <style>
-    body {
-      background: linear-gradient(to right, #ffe0f0, #f8f0ff);
-      font-family: 'Quicksand', sans-serif;
-      color: #5c3b6f;
-      margin: 0;
-      padding: 0 2rem;
+    :root{
+      --bg:#0f1724; --card:#111827; --accent:#ff6b81; --muted:#9ca3af; --glass: rgba(255,255,255,0.04);
+      --radius:14px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #d46ba3;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-    h2 {
-      color: #d46ba3;
-      font-size: 2rem;
-      margin-top: 2rem;
-    }
-    ul {
-      background-color: #fff0f7;
-      padding: 1.5rem;
-      border-radius: 15px;
-      list-style: none;
-      box-shadow: 0 4px 10px rgba(200, 150, 200, 0.2);
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    .question {
-      background-color: #ffeef6;
-      padding: 1rem 1.2rem;
-      margin: 1.2rem 0;
-      border-radius: 15px;
-      box-shadow: 0 3px 8px rgba(200, 100, 140, 0.1);
-    }
-    .question h3 {
-      margin-bottom: 0.7rem;
-      color: #c4648f;
-    }
-    button {
-      background-color: #d46ba3;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-    button:hover {
-      background-color: #b05588;
-    }
-    .result {
-      background-color: #fff5fa;
-      border-left: 6px solid #d1739f;
-      padding: 1rem;
-      border-radius: 10px;
-      font-weight: bold;
-      color: #6d4063;
-      margin-top: 1.5rem;
-    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071026 0%, #0f1724 100%);color:#e6eef8}
+    .container{max-width:980px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:18px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--accent)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:14px}
+    .photo-row{display:flex;gap:10px;flex-wrap:wrap}
+    .photo{flex:1 1 140px;border-radius:10px;overflow:hidden;box-shadow:0 6px 20px rgba(2,6,23,0.6);background:#000}
+    .photo a{display:block}
+    .photo img{width:100%;height:120px;object-fit:cover;display:block;filter:saturate(1.05)}
+    .songs li{margin:10px 0}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#ff9aa2);color:#071026;font-weight:600;text-decoration:none}
+    .member-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+    .member{padding:8px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);display:flex;align-items:center;gap:10px}
+    .member img{width:46px;height:46px;border-radius:8px;object-fit:cover}
+    footer{color:var(--muted);font-size:13px;margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Stray Kids para No-Stays</h1>
-    <p>Conoce al grupo y descubre quién podría ser tu bias ✨</p>
-  </header>
+  <div class="container">
+    <header>
+      <div class="logo">SKZ</div>
+      <div>
+        <h1>Guía rápida para stannear a Stray Kids (SKZ)</h1>
+        <p class="lead">Todo lo esencial: canciones recomendadas, dónde ver fotos, cómo apoyar y tips para ser un buen <em>STAY</em>.</p>
+      </div>
+    </header>
 
-  <section>
-    <h2>¿Quiénes son Stray Kids?</h2>
-    <p>Stray Kids (SKZ) es un grupo surcoreano formado por JYP Entertainment que debutó en 2018. Están compuestos por ocho miembros que no solo interpretan sus canciones, sino que también las escriben, componen y producen. Son conocidos por su energía, su estilo musical único y por conectar con sus fans a través de letras honestas.</p>
-  </section>
+    <div class="grid">
+      <!-- Main column -->
+      <div>
+        <section class="card">
+          <h2>Top canciones que debes conocer</h2>
+          <p class="lead">Links directos para escuchar en YouTube (abre búsqueda rápida si el vídeo oficial cambia).</p>
+          <ol class="songs">
+            <li><strong>God's Menu</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+god%27s+menu" target="_blank" rel="noopener">Ver en YouTube</a></li>
+            <li><strong>Back Door</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+back+door" target="_blank" rel="noopener">Ver en YouTube</a></li>
+            <li><strong>MANIAC</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+maniac" target="_blank" rel="noopener">Ver en YouTube</a></li>
+            <li><strong>CASE 143</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+case+143" target="_blank" rel="noopener">Ver en YouTube</a></li>
+            <li><strong>Thunderous (소리꾼)</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+thunderous" target="_blank" rel="noopener">Ver en YouTube</a></li>
+            <li><strong>Mixtape / Pre-debut tracks</strong> — <a class="btn" href="https://www.youtube.com/results?search_query=stray+kids+mixtape" target="_blank" rel="noopener">Buscar Mixtape</a></li>
+          </ol>
+        </section>
 
-  <section>
-    <h2>¿Qué significa ser STAY?</h2>
-    <p>STAY es el nombre oficial del fandom de Stray Kids. Significa que los fans <strong>permanecen</strong> al lado de ellos, y ellos al lado de sus fans. Si te gusta su música, su energía o sus mensajes, ya eres un poco STAY 💕</p>
-  </section>
+        <section class="card" style="margin-top:16px">
+          <h2>¿Cómo apoyar de forma positiva?</h2>
+          <ul>
+            <li>Compra música y mercancía oficial cuando puedas (álbumes físicos, conciertos, mercancía de la tienda oficial).</li>
+            <li>Escucha en plataformas oficiales y guarda/compra canciones que te gustan para aumentar streams legítimos.</li>
+            <li>Respeta la privacidad de los miembros: evita la difusión de contenido invasivo o no autorizado.</li>
+            <li>Apoya en redes con contenido positivo: covers, fanarts originales, traducciones y trends respetuosos.</li>
+          </ul>
+        </section>
 
-  <section>
-    <h2>Miembros y Roles</h2>
-    <ul>
-      <li><strong>Bangchan</strong>: Líder, productor, vocalista, rapero</li>
-      <li><strong>Lee Know</strong>: Bailarín, vocalista, rapero, visual</li>
-      <li><strong>Changbin</strong>: Rapero, productor</li>
-      <li><strong>Hyunjin</strong>: Bailarín, rapero, visual</li>
-      <li><strong>Han</strong>: Rapero, vocalista, productor</li>
-      <li><strong>Félix</strong>: Bailarín, rapero, visual</li>
-      <li><strong>Seungmin</strong>: Vocalista</li>
-      <li><strong>I.N</strong>: Vocalista, Maknae</li>
-    </ul>
-  </section>
+        <section class="card" style="margin-top:16px">
+          <h2>Recursos útiles</h2>
+          <ul>
+            <li><a href="https://stray-kids.fandom.com" target="_blank" rel="noopener" class="btn">Wiki de Stray Kids</a> — info de miembros, discografía y más.</li>
+            <li><a href="https://www.youtube.com/c/StrayKids" target="_blank" rel="noopener" class="btn">Canal oficial de YouTube</a> — MVs y contenidos oficiales.</li>
+            <li><a href="https://twitter.com/Stray_Kids" target="_blank" rel="noopener" class="btn">Twitter oficial</a> — noticias rápidas y anuncios.</li>
+          </ul>
+        </section>
 
-  <section>
-    <h2>Canciones Recomendadas</h2>
-    <ul>
-      <li><strong>Back Door</strong> – Energía e innovación</li>
-      <li><strong>Hellevator</strong> – Sus comienzos y mensaje de lucha</li>
-      <li><strong>Maniac</strong> – Ritmos únicos y estilo SKZ</li>
-      <li><strong>God's Menu</strong> – La canción que los hizo virales</li>
-      <li><strong>My Pace</strong> – Autoestima y autenticidad</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>💘 ¿Quién es tu Bias?</h2>
-    <form id="quiz">
-      <div class="question">
-        <h3>1. ¿Qué te atrae más en un idol?</h3>
-        <label><input type="radio" name="q1" value="bangchan"> Liderazgo y ternura</label><br>
-        <label><input type="radio" name="q1" value="felix"> Voz única y dulzura</label><br>
-        <label><input type="radio" name="q1" value="hyunjin"> Visual y vibes artísticas</label><br>
-        <label><input type="radio" name="q1" value="han"> Gracia y talento múltiple</label>
       </div>
 
-      <div class="question">
-        <h3>2. ¿Qué estilo musical prefieres?</h3>
-        <label><input type="radio" name="q2" value="changbin"> Rap intenso y poderoso</label><br>
-        <label><input type="radio" name="q2" value="seungmin"> Vocal line emocional</label><br>
-        <label><input type="radio" name="q2" value="bangchan"> Producción y letras profundas</label><br>
-        <label><input type="radio" name="q2" value="felix"> Beats suaves pero fuertes</label>
-      </div>
+      <!-- Side column -->
+      <aside>
+        <div class="card">
+          <h3>Fotos destacadas</h3>
+          <p class="lead">Haz click para ver galerías y fotos oficiales / editoriales.</p>
+          <div class="photo-row">
+            <div class="photo"><a href="https://www.voguearabia.com/article/stray-kids-who-are-the-members-of-the-k-pop-group-thats-shaking-up-the-fashion-world" target="_blank" rel="noopener"><img alt="Stray Kids - Vogue" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"></a></div>
+            <div class="photo"><a href="https://www.rollingstone.co.uk/music/features/stray-kids-staying-in-power-interview-rolling-stone-uk-43118/" target="_blank" rel="noopener"><img alt="Stray Kids - Rolling Stone" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"></a></div>
+            <div class="photo"><a href="https://www.grammy.com" target="_blank" rel="noopener"><img alt="Stray Kids - GRAMMY" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"></a></div>
+            <div class="photo"><a href="https://www.pinterest.com" target="_blank" rel="noopener"><img alt="Stray Kids - Pinterest" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"></a></div>
+          </div>
+          <p style="margin-top:10px;color:var(--muted);font-size:13px">Las imágenes enlazan a artículos y galerías; haz click para ver fotos en alta resolución y créditos.</p>
+        </div>
 
-      <div class="question">
-        <h3>3. ¿Qué rasgo te enamora más?</h3>
-        <label><input type="radio" name="q3" value="hyunjin"> Elegancia y carisma</label><br>
-        <label><input type="radio" name="q3" value="leeknow"> Carácter fuerte y baile</label><br>
-        <label><input type="radio" name="q3" value="in"> Sonrisa adorable (Maknae power)</label><br>
-        <label><input type="radio" name="q3" value="han"> Humor y genio creativo</label>
-      </div>
-
-      <button type="button" onclick="showBias()">Descubrir mi bias</button>
-    </form>
-
-    <div id="result" class="result" style="display:none;"></div>
-  </section>
-
-  <script>
-    function showBias() {
-      const answers = [
-        document.querySelector('input[name="q1"]:checked')?.value,
-        document.querySelector('input[name="q2"]:checked')?.value,
-        document.querySelector('input[name="q3"]:checked')?.value
-      ];
-
-      if (answers.includes(undefined)) {
-        alert("¡Completa todas las preguntas! 💫");
-        return;
-      }
-
-      const count = {};
-      answers.forEach(a => count[a] = (count[a] || 0) + 1);
-
-      let topBias = Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b);
-
-      const biasNames = {
-        bangchan: "Bang Chan 💪🐺 – El líder protector y trabajador",
-        felix: "Felix 🌟🧸 – El ángel de voz profunda y dulzura pura",
-        hyunjin: "Hyunjin 🎨👑 – El visual salido de un drama",
-        han: "Han 🐿️🎤 – El genio loco adorable y creativo",
-        changbin: "Changbin 🔥🐉 – El rapero con corazón suave",
-        seungmin: "Seungmin 🎶🐶 – Voz clara y alma tranquila",
-        leeknow: "Lee Know 🐱💃 – El bailarín con carácter",
-        in: "I.N 🌸🐣 – Maknae carismático y adorable"
-      };
-
-      document.getElementById("result").style.display = "block";
-      document.getElementById("result").textContent = `Tu bias ideal es: ${biasNames[topBias]}`;
-    }
-  </script>
-</body>
-</html>
+        <div class="card" style="margin-top:16px">
+          <h3>Miembros (rápido)</h3>
+          <div class="member-list">
+            <div class="member"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Bang Chan"><div><strong>Bang Chan</strong><div style="font-size:12px;color:var(--muted)">Leader / Producer</d
